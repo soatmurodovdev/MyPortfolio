@@ -1,0 +1,877 @@
+<!-- Copyright: Murodjon Soatmurodov -->
+<!-- Website version: 3.0.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Murodjon Soatmurodov — Hospitality professional, room service & waiter specialist with 5+ years of experience in luxury hotels across Uzbekistan, Turkey and Northern Cyprus.">
+    <meta name="theme-color" content="#0d1b2a">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Murodjon Soatmurodov | Tourism Specialist & Hotelier">
+    <meta property="og:description" content="Hospitality professional delivering world-class guest experiences in international luxury resorts.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/pic-personal.jpg">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>
+        Murodjon Soatmurodov | Tourism Specialist & Hotelier
+    </title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/pic-personal.jpg" class="favicons">
+</head>
+
+<body>
+    <!--==================== PRELOADER ====================-->
+    <div class="preloader" id="preloader">
+        <div class="preloader__mark">MS<span>.</span></div>
+        <div class="preloader__bar"></div>
+    </div>
+
+    <!--==================== AMBIENT BACKGROUND ====================-->
+    <div class="ambient-bg" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <b>
+                <a href="#" class="nav__logo">
+                    <span class="logo__first">MURODJON</span> <span class="logo__second">SOATMURODOV</span>
+                </a>
+            </b>
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> 
+                            <span class="nav__name" data-i18n="nav_home">Welcome</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user-circle nav__icon"></i> 
+                            <span class="nav__name" data-i18n="nav_about">Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#pathway" class="nav__link">
+                            <i class="uil uil-graduation-cap nav__icon"></i> 
+                            <span class="nav__name" data-i18n-html="nav_pathway">Education<br>Experience</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-setting nav__icon"></i> 
+                            <span class="nav__name" data-i18n-html="nav_skills">Skills<br>Language</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">
+                            <i class="uil uil-comment-alt-heart nav__icon"></i> 
+                            <span class="nav__name" data-i18n-html="nav_testimonials">Guest<br>Feedback</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> 
+                            <span class="nav__name" data-i18n-html="nav_gallery">Photo<br>Album</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> 
+                            <span class="nav__name" data-i18n-html="nav_contact">Contact<br>me</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__clock" id="nav-clock" aria-hidden="true">
+                    <i class="uil uil-clock-nine"></i>
+                    <span id="nav-clock-time">--:--</span>
+                </div>
+
+                <i class="uil uil-moon change-theme" id="theme-button" title="Theme"></i>
+                <i class="uil uil-setting settings-toggle" id="settings-toggle" title="Settings"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SETTINGS PANEL ====================-->
+    <div class="settings-overlay" id="settings-overlay"></div>
+    <aside class="settings-panel" id="settings-panel">
+        <div class="settings-panel__header">
+            <h3 class="settings-panel__title" data-i18n="settings_title">Settings</h3>
+            <i class="uil uil-times settings-panel__close" id="settings-close"></i>
+        </div>
+
+        <div class="settings-panel__group">
+            <span class="settings-panel__label" data-i18n="settings_language">Language</span>
+            <div class="lang__switch" id="lang-switch">
+                <button type="button" class="lang__switch-btn" data-lang="uz">O'zbekcha</button>
+                <button type="button" class="lang__switch-btn" data-lang="en">English</button>
+                <button type="button" class="lang__switch-btn" data-lang="ru">Русский</button>
+                <button type="button" class="lang__switch-btn" data-lang="tr">Türkçe</button>
+            </div>
+        </div>
+
+        <div class="settings-panel__group">
+            <span class="settings-panel__label" data-i18n="settings_theme">Appearance</span>
+            <div class="settings-panel__theme-row">
+                <span data-i18n="settings_theme_hint">Dark / Light mode</span>
+                <i class="uil uil-moon change-theme" id="theme-button-panel" style="margin:0;"></i>
+            </div>
+        </div>
+
+        <div class="settings-panel__group">
+            <span class="settings-panel__label" data-i18n="settings_worldclock">World Clock</span>
+            <div class="world-clock" id="world-clock">
+                <div class="world-clock__item" data-tz="Asia/Tashkent">
+                    <div class="world-clock__city"><span>Tashkent</span><span data-i18n="tz_you">Uzbekistan</span></div>
+                    <span class="world-clock__time">--:--</span>
+                </div>
+                <div class="world-clock__item" data-tz="Europe/Istanbul">
+                    <div class="world-clock__city"><span>Ankara / Antalya</span><span data-i18n="tz_tr">Turkey</span></div>
+                    <span class="world-clock__time">--:--</span>
+                </div>
+                <div class="world-clock__item" data-tz="Asia/Famagusta">
+                    <div class="world-clock__city"><span>Kyrenia</span><span data-i18n="tz_cy">N. Cyprus</span></div>
+                    <span class="world-clock__time">--:--</span>
+                </div>
+                <div class="world-clock__item" data-tz="local">
+                    <div class="world-clock__city"><span data-i18n="tz_local">Your local time</span><span id="local-tz-name">—</span></div>
+                    <span class="world-clock__time">--:--</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/soatmurodovdev/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://instagram.com/murodjon_soatmurodov/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://github.com/soatmurodovdev/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://t.me/murodjon_soatmurodov" target="_blank" class="home__social-icon">
+                            <i class="uil uil-telegram-alt"></i>
+                        </a>
+                        <a href="https://www.facebook.com/murodjon.soatmurodov" target="_blank" class="home__social-icon">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    
+                                    <image class="home__blob-img" xlink:href="assets/img/pic-personal.jpg"/>
+                                </g>
+                            </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title"><span data-i18n="hero_greeting">Hi, I am</span> <span class="type_js"></span></h1>
+                        <p class="home__description" data-i18n="hero_description">
+                            Dedicated to providing world-class guest experiences in the hospitality industry. With a strong background in international resorts and a commitment to professionalism, I ensure every guest receives impeccable service and attention to detail.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                                <span data-i18n="hero_button">Contact Me</span> <i class="uil uil-message button__icon"></i>
+                            </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home_scroll-name" data-i18n="hero_scroll">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title" data-i18n="about_title">About Me</h2>
+            <span class="section__subtitle" data-i18n="about_subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/6.jpg" alt="" class="about__img">
+
+
+                <div class="about__data">
+                    <p class="about__description" data-i18n="about_description">
+                        Experienced Room Service and Waiter professional with over five years of experience in luxury hotels and international resorts across Uzbekistan, Turkey,and Northern Cyprus. Highly skilled in delivering excellent guest service, managing food and beverage operations, and maintaining high service standards in fast-paced, multicultural environments. Known for professionalism, reliability, strong attention to detail, and effective teamwork. Fluent in Uzbek and Turkish, with working proficiency in English and Russian. 
+                    </p>
+
+                    <div class="about__info">
+
+                        <div>
+                            <span class="about__info-title">5+</span>
+                            <span class="about__info-name" data-i18n-html="about_years">Years <br> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">3+</span>
+                            <span class="about__info-name" data-i18n-html="about_countries">Countries <br> worked</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">5+</span>
+                            <span class="about__info-name" data-i18n-html="about_hotels">Global Luxury<br> Hotels</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="Murodjon-Soatmurodov-CV.pdf" href="assets/pdf/murodjon-soatmurodov-cv.pdf" class="button button--flex">
+                       <span data-i18n="about_button">Download CV</span> <i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============Education and experience================-->
+
+<section class="pathway section" id="pathway">
+    <h2 class="section__title" data-i18n="pathway_title">Professional Pathway</h2>
+    <span class="section__subtitle" data-i18n="pathway_subtitle">My Education & Experience Timeline</span>
+
+    <div class="pathway__container container grid">
+        
+        <div class="pathway__group">
+            <h3 class="pathway__header"><i class="uil uil-graduation-cap"></i> <span data-i18n="pathway_education">EDUCATION</span></h3>
+            <div class="pathway__card edu-card">
+                <div class="pathway__data">
+                    <h2 class="pathway__title" data-i18n="edu_degree">College Diploma in Finance</h2>
+                    <p class="pathway__institution">Saryosiya College of Economics</p>
+                    <div class="pathway__footer">
+                        <span><i class="uil uil-calendar-alt"></i> 2017 - 2021</span>
+                        <span class="pathway__loc">SURKHANDARYA, UZB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pathway__group">
+            <h3 class="pathway__header"><i class="uil uil-briefcase-alt"></i> <span data-i18n="pathway_experience">EXPERIENCE</span></h3>
+        </div>
+    </div>
+
+    <div class="exp__timeline container">
+
+        <article class="exp-card reveal-left">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/uludag.jpg" alt="Uludağ Et Lokantası, Ankara">
+                <span class="exp-card__year">2026</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge tr">Turkey, Ankara</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Aug 2026 - Present</span>
+                </div>
+                <h2 class="exp-card__job">Head Waiter</h2>
+                <h4 class="exp-card__place">Uludağ Et Lokantası</h4>
+                <p class="exp-card__venue">A Turkish steakhouse institution founded in Ankara in 1956, renowned nationwide for its İskender kebab and white-tablecloth service, with branches across Ankara and Istanbul serving traditional Anatolian cuisine.</p>
+                <ul class="pathway__tasks">
+                    <li>Managed daily floor operations and upheld high service standards</li>
+                    <li>Supervised the waiting staff and coordinated shift schedules</li>
+                    <li>Handled guest relations, special requests, and complaint resolution</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="exp-card reveal-right">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/ela-excellence.jpg" alt="Ela Excellence Resort Belek">
+                <span class="exp-card__year">2025</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge tr">Turkey, Belek/Antalya</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Feb 2025 - Nov 2025</span>
+                </div>
+                <h2 class="exp-card__job">Room Service Waiter</h2>
+                <h4 class="exp-card__place">Ela Excellence Resort Belek</h4>
+                <p class="exp-card__venue">A 5-star ultra all-inclusive resort on a 270m private beach, with 9 bars, 15 dining venues under its "FeelWell" concept, a 4,500m² Elazen Spa & Wellness centre, and the Everland Kids World.</p>
+                <ul class="pathway__tasks">
+                    <li>Delivered high-level guest satisfaction through attentive service</li>
+                    <li>Accurately recorded and processed guest orders without delay</li>
+                    <li>Collaborated seamlessly with the team to ensure smooth operations</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="exp-card reveal-left">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/sueno.jpg" alt="Sueno Hotels Beach Side">
+                <span class="exp-card__year">2024</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge tr">Turkey, Side/Antalya</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Feb 2024 - Nov 2024</span>
+                </div>
+                <h2 class="exp-card__job">Room Service Waiter</h2>
+                <h4 class="exp-card__place">Sueno Hotels Beach Side</h4>
+                <p class="exp-card__venue">A 5-star Ultra All Inclusive resort with 760 rooms and villas, 11 outdoor and 2 indoor pools, a full aqua park, and a Blue Flag, Green Key-certified beach on the Turkish Riviera.</p>
+                <ul class="pathway__tasks">
+                    <li>Provided attentive service to deliver top-tier guest satisfaction</li>
+                    <li>Recorded and processed guest orders quickly and accurately</li>
+                    <li>Demonstrated strong work ethic, reliability, and punctuality</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="exp-card reveal-right">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/hyatt-regency.webp" alt="Hyatt Regency Tashkent">
+                <span class="exp-card__year">2023</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge uz">Uzbekistan, Tashkent</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Feb 2023 - Oct 2023</span>
+                </div>
+                <h2 class="exp-card__job">Room Service Waiter</h2>
+                <h4 class="exp-card__place">Hyatt Regency Tashkent</h4>
+                <p class="exp-card__venue">Uzbekistan's first Hyatt-branded hotel, a 5-star property with 300 rooms including 52 suites, a 20-metre indoor pool, and rooftop dining at Sette Pizza Bistro in the heart of Tashkent.</p>
+                <ul class="pathway__tasks">
+                    <li>Delivered food and beverages to guest rooms promptly and accurately</li>
+                    <li>Handled orders and ensured special requests were fulfilled</li>
+                    <li>Followed hotel service standards and safety protocols</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="exp-card reveal-left">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/les-ambassadeurs.jpg" alt="Les Ambassadeurs Hotel Casino & Marina">
+                <span class="exp-card__year">2022</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge cy">Northern Cyprus, Kyrenia</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Jan 2022 - Oct 2022</span>
+                </div>
+                <h2 class="exp-card__job">Bar Waiter</h2>
+                <h4 class="exp-card__place">Les Ambassadeurs Hotel Casino & Marina</h4>
+                <p class="exp-card__venue">A 5-star beachfront resort and the only hotel in the region with its own 150-yacht marina, featuring a jewel-box casino, the News Bar & Disco, and a spa with a classic Turkish bath.</p>
+                <ul class="pathway__tasks">
+                    <li>Delivered high-standard bar service to guests</li>
+                    <li>Took and served guest orders accurately and promptly</li>
+                    <li>Worked seamlessly within multicultural teams</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="exp-card reveal-right">
+            <div class="exp-card__media">
+                <img src="assets/img/hotels/lords-palace.jpg" alt="Lord's Palace Hotel, Spa & Casino">
+                <span class="exp-card__year">2021</span>
+            </div>
+            <div class="exp-card__body">
+                <div class="exp-card__top">
+                    <span class="pathway__badge cy">Northern Cyprus, Kyrenia</span>
+                    <span class="pathway__date"><i class="uil uil-calendar-alt"></i> Jan 2021 - Nov 2021</span>
+                </div>
+                <h2 class="exp-card__job">Waiter</h2>
+                <h4 class="exp-card__place">Lord's Palace Hotel, Spa & Casino</h4>
+                <p class="exp-card__venue">A 5-star hotel with 250 rooms overlooking Kyrenia's harbour, home to a 2,000m² casino, 3 restaurants, 6 bars/lounges, three outdoor pools, and a full-service spa.</p>
+                <ul class="pathway__tasks">
+                    <li>Delivered high-quality guest service adhering to luxury standards</li>
+                    <li>Took food and beverage orders accurately and efficiently</li>
+                    <li>Maintained strict work discipline, punctuality, and reliability</li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+</section>
+        <!--=============Education and experience================-->
+
+        <!--==================== SKILLS ====================-->
+
+<section class="skills section" id="skills">
+    <h2 class="section__title" data-i18n="skills_title">Abilities & Languages</h2>
+    <span class="section__subtitle" data-i18n="skills_subtitle">My professional proficiency</span>
+
+    <div class="skills__container container grid">
+        <div class="skills__content">
+            <h3 class="skills__header"><i class="uil uil-layers-alt"></i> <span data-i18n="skills_prof_header">Professional Skills</span></h3>
+            
+            <div class="skills__box grid">
+                <div class="skill__item" data-target="99">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_customer">Customer service</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="99">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_communication">Communication</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="90">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_multitasking">Multitasking</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="95">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_teamwork">Teamwork and collaboration</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="85">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_time">Time management</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="99">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_problem">Problem-solving</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="90">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_deadline">Meeting deadlines</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+
+                <div class="skill__item" data-target="96">
+                    <div class="skill__info">
+                        <span class="skill__name" data-i18n="skill_pressure">Ability to work under pressure</span>
+                        <span class="skill__count">0%</span>
+                    </div>
+                    <div class="skill__line"><span class="skill__fill"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__content">
+            <h3 class="skills__header"><i class="uil uil-globe"></i> <span data-i18n="skills_lang_header">Language Fluency</span></h3>
+            <div class="lang__container grid">
+                <div class="lang__card">
+                    <div class="lang__progress" style="--p:100; --c:var(--first-color);">
+                        <span class="lang__text">100%</span>
+                    </div>
+                    <h3 class="lang__name" data-i18n="lang_uzbek">Uzbek</h3>
+                    <p class="lang__level" data-i18n="lang_native">Native</p>
+                </div>
+                <div class="lang__card">
+                    <div class="lang__progress" style="--p:95; --c:#e30a17;">
+                        <span class="lang__text">95%</span>
+                    </div>
+                    <h3 class="lang__name" data-i18n="lang_turkish">Turkish</h3>
+                    <p class="lang__level" data-i18n="lang_advanced">Advanced</p>
+                </div>
+                <div class="lang__card">
+                    <div class="lang__progress" style="--p:65; --c:#00247d;">
+                        <span class="lang__text">65%</span>
+                    </div>
+                    <h3 class="lang__name" data-i18n="lang_english">English</h3>
+                    <p class="lang__level" data-i18n="lang_intermediate">Intermediate</p>
+                </div>
+                <div class="lang__card">
+                    <div class="lang__progress" style="--p:45; --c:#0099b5;">
+                        <span class="lang__text">45%</span>
+                    </div>
+                    <h3 class="lang__name" data-i18n="lang_russian">Russian</h3>
+                    <p class="lang__level" data-i18n="lang_elementary">Elementary</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__connect">
+            <h3 class="skills__header skills__header--static"><i class="uil uil-share-alt"></i> <span data-i18n="skills_connect">Let's Connect</span></h3>
+            <div class="skills__social">
+                <a href="https://www.linkedin.com/in/soatmurodovdev/" target="_blank" class="skills__social-link">
+                    <i class="uil uil-linkedin-alt"></i> <span>LinkedIn</span>
+                </a>
+                <a href="https://instagram.com/murodjon_soatmurodov/" target="_blank" class="skills__social-link">
+                    <i class="uil uil-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="https://t.me/murodjon_soatmurodov" target="_blank" class="skills__social-link">
+                    <i class="uil uil-telegram-alt"></i> <span>Telegram</span>
+                </a>
+                <a href="https://www.facebook.com/murodjon.soatmurodov" target="_blank" class="skills__social-link">
+                    <i class="uil uil-facebook-f"></i> <span>Facebook</span>
+                </a>
+                <a href="https://github.com/soatmurodovdev/" target="_blank" class="skills__social-link">
+                    <i class="uil uil-github-alt"></i> <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!--==================== SKILLS 2 ====================-->                  
+
+        <!--==================== TESTIMONIALS ====================-->
+
+<section class="testimonial section" id="testimonials">
+    <h2 class="section__title" data-i18n="testimonials_title">Guest Feedback</h2>
+    <span class="section__subtitle" data-i18n="testimonials_subtitle">What guests and colleagues say</span>
+
+    <div class="testimonial__container swiper">
+        <div class="swiper-wrapper">
+
+            <div class="testimonial__card swiper-slide">
+                <i class="uil uil-quote-italic testimonial__icon"></i>
+                <p class="testimonial__description">Murodjon anticipated everything before we even had to ask — from the temperature of our wine to remembering how our children like their pasta. Room service felt like a personal butler, not a menu order.</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar"><i class="uil uil-user"></i></div>
+                    <div>
+                        <h3 class="testimonial__name">Hotel Guest</h3>
+                        <span class="testimonial__role">Sueno Hotels Beach Side, Antalya</span>
+                    </div>
+                </div>
+                <div class="testimonial__stars"><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+                <i class="uil uil-quote-italic testimonial__icon"></i>
+                <p class="testimonial__description">As a shift supervisor, Murodjon was the calmest person on the floor during our busiest weekends. He trained new waiters patiently and never let a guest's request fall through the cracks.</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar"><i class="uil uil-user"></i></div>
+                    <div>
+                        <h3 class="testimonial__name">F&B Manager</h3>
+                        <span class="testimonial__role">Ela Excellence Resort, Belek</span>
+                    </div>
+                </div>
+                <div class="testimonial__stars"><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+                <i class="uil uil-quote-italic testimonial__icon"></i>
+                <p class="testimonial__description">We travel often for business and rarely remember a waiter's name — Murodjon is the exception. Professional, quick, and genuinely warm. Our stay at Hyatt Regency Tashkent was better because of him.</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar"><i class="uil uil-user"></i></div>
+                    <div>
+                        <h3 class="testimonial__name">Returning Guest</h3>
+                        <span class="testimonial__role">Hyatt Regency Tashkent</span>
+                    </div>
+                </div>
+                <div class="testimonial__stars"><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+                <i class="uil uil-quote-italic testimonial__icon"></i>
+                <p class="testimonial__description">Coordinating a private casino-night dinner for forty guests is stressful — Murodjon kept every course on time and every glass full without us noticing the effort behind it.</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar"><i class="uil uil-user"></i></div>
+                    <div>
+                        <h3 class="testimonial__name">Events Coordinator</h3>
+                        <span class="testimonial__role">Lord's Palace Hotel, Spa & Casino</span>
+                    </div>
+                </div>
+                <div class="testimonial__stars"><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+        <!--==================== TESTIMONIALS ====================-->
+
+        <!--==================== QUALIFICATION ====================-->
+        
+<section class="gallery section" id="gallery">
+    <h2 class="section__title" data-i18n="gallery_title">Visual Experience</h2>
+    <span class="section__subtitle" data-i18n="gallery_subtitle">10 Moments of my professional path</span>
+
+    <div class="gallery__container">
+        <div class="gallery__wrapper">
+            <div class="gallery__card">
+                <img src="assets/img/1.jpg" alt="Moment 1">
+                <div class="gallery__info">
+                    <span>Antalya</span>
+                    <h3>The Mediterranean Sea</h3>
+                </div>
+            </div>
+
+            <div class="gallery__card">
+                <img src="assets/img/2.jpg" alt="Moment 2">
+                <div class="gallery__info">
+                    <span>Antalya</span>
+                    <h3>Island View</h3>
+                </div>
+            </div>
+
+            <div class="gallery__card">
+                <img src="assets/img/3.jpg" alt="Moment 3">
+                <div class="gallery__info">
+                    <span>Antalya</span>
+                    <h3>Skyline Panorama</h3>
+                </div>
+            </div>
+
+            <div class="gallery__card">
+                <img src="assets/img/4.jpg" alt="Moment 4">
+                <div class="gallery__info">
+                    <span>Old Town</span>
+                    <h3>Historic Antalya</h3>
+                </div>
+            </div>
+
+            <div class="gallery__card">
+                <img src="assets/img/5.jpg" alt="Moment 5">
+                <div class="gallery__info">
+                    <span>Hadrian Gate</span>
+                    <h3>Ancient History</h3>
+                </div>
+            </div>
+
+            <div class="gallery__card">
+                <img src="assets/img/6.jpg" alt="Moment 6">
+                <div class="gallery__info"><span>Antalya</span><h3>Sea Horizon</h3></div>
+            </div>
+            <div class="gallery__card">
+                <img src="assets/img/7.jpg" alt="Moment 7">
+                <div class="gallery__info"><span>Evening</span><h3>City Lights</h3></div>
+            </div>
+            <div class="gallery__card">
+                <img src="assets/img/8.jpg" alt="Moment 8">
+                <div class="gallery__info"><span>Park</span><h3>Nature Moments</h3></div>
+            </div>
+            <div class="gallery__card">
+                <img src="assets/img/9.jpg" alt="Moment 9">
+                <div class="gallery__info"><span>Leisure</span><h3>Fishing Day</h3></div>
+            </div>
+            <div class="gallery__card">
+                <img src="assets/img/10.jpg" alt="Moment 10">
+                <div class="gallery__info"><span>Relax</span><h3>Sunset View</h3></div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!--==================== QUALIFICATION 2 ====================-->     
+
+
+        <!--==================== SERVICES ====================-->
+        
+        <!--==================== PORTFOLIO ====================-->
+        
+
+        <!--==================== PROJECT IN MIND ====================-->
+        
+        <!--==================== TESTIMONIAL ====================-->
+        
+
+        <!--==================== CONTACT ME ====================-->
+        
+<section class="contact section" id="contact">
+    <h2 class="section__title" data-i18n="contact_title">Contact Me</h2>
+    <span class="section__subtitle" data-i18n="contact_subtitle">Let's build something great together</span>
+
+    <div class="contact__hub container glass-container">
+        <div class="contact__sidebar">
+            <div class="contact__card ripple" onclick="window.open('https://wa.me/905353587579', '_blank')">
+                <div class="card__icon-wrapper wa-bg">
+                    <i class="uil uil-whatsapp"></i>
+                </div>
+                <div class="card__text">
+                    <span class="card__tag" data-i18n="contact_whatsapp">WhatsApp</span>
+                    <p class="card__val">+905353587579</p>
+                </div>
+            </div>
+
+            <div class="contact__card ripple" onclick="window.location.href='mailto:soatmurodovdev@gmail.com'">
+                <div class="card__icon-wrapper mail-bg">
+                    <i class="uil uil-envelope-upload"></i>
+                </div>
+                <div class="card__text">
+                    <span class="card__tag" data-i18n="contact_gmail">Gmail</span>
+                    <p class="card__val">soatmurodovdev@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact__card ripple">
+                <div class="card__icon-wrapper loc-bg">
+                    <i class="uil uil-location-point"></i>
+                </div>
+                <div class="card__text">
+                    <span class="card__tag" data-i18n="contact_location">Location</span>
+                    <p class="card__val" data-i18n="contact_location_val">Uzbekistan / Tashkent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__main-form">
+            <form id="contact-form" class="modern__form">
+                <div class="form__group">
+                    <input type="text" name="user_name" class="form__input" placeholder=" " required id="name">
+                    <label class="form__label" data-i18n="form_name">Full Name</label>
+                    <div class="form__bar"></div>
+                </div>
+
+                <div class="form__group">
+                    <input type="email" name="user_email" class="form__input" placeholder=" " required id="email">
+                    <label class="form__label" data-i18n="form_email">Your Email</label>
+                    <div class="form__bar"></div>
+                </div>
+
+                <div class="form__group">
+                    <textarea name="message" class="form__input" placeholder=" " required id="msg"></textarea>
+                    <label class="form__label" data-i18n="form_message">Message</label>
+                    <div class="form__bar"></div>
+                </div>
+
+                <button type="submit" class="premium-btn" id="send-btn">
+                    <span class="btn-text" data-i18n="form_send">Send</span>
+                    <div class="btn-icon">
+                        <i class="uil uil-message"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer tourism-footer">
+    <div class="footer__container container grid">
+        
+        <div class="footer__content main-brand">
+            <h1 class="footer__logo">Murodjon <span>SOATMURODOV</span></h1>
+            <p class="footer__tagline" data-i18n="footer_tagline">Bringing world-class service to every destination.</p>
+            
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__subtitle" data-i18n="footer_destinations">Work Destinations</h3>
+            <ul class="footer__destination-list">
+    <li>
+        <img src="https://flagcdn.com/w40/uz.png" alt="Uzbekistan" class="footer__flag"> 
+        Uzbekistan
+    </li>
+    <li>
+        <img src="https://flagcdn.com/w40/cy.png" alt="Northern Cyprus" class="footer__flag"> 
+        Northern Cyprus
+    </li>
+    <li>
+        <img src="https://flagcdn.com/w40/tr.png" alt="Turkey" class="footer__flag"> 
+        Antalya, Turkey
+    </li>
+</ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__subtitle" data-i18n="footer_connected">Stay Connected</h3>
+            <div class="footer__social-modern">
+                <a href="https://wa.me/998995333321" target="_blank" class="f-social-btn wa" aria-label="WhatsApp"><i class="uil uil-whatsapp"></i></a>
+                <a href="https://t.me/yourusername" target="_blank" class="f-social-btn tg" aria-label="Telegram"><i class="uil uil-telegram-alt"></i></a>
+                <a href="mailto:soatmurodovdev@gmail.com" class="f-social-btn ml" aria-label="Email"><i class="uil uil-envelope-alt"></i></a>
+            </div>
+            <div class="footer__contact-info">
+                <p><i class="uil uil-phone-alt"></i> +998 99 533 33 21</p>
+                <p><i class="uil uil-clock-three"></i> <span data-i18n="footer_available">Available for On-site work!</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copy">
+            &copy; Murodjon Soatmurodov!  All rights reserved: 2025-2026
+        </p>
+    </div>
+</footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== EMAILJS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--==================== LANGUAGE SYSTEM (i18n) ====================-->
+    <script src="assets/js/i18n.js"></script>
+
+    <!-- =================== TYPED JS -->
+    <script src="assets/js/typed.js"></script>
+    <!-- =================== TYPING JS -->
+    <script src="assets/js/typing.js"></script>
+
+    <!--==================== UI (preloader / settings / clock / lightbox) ====================-->
+    <script src="assets/js/ui.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
